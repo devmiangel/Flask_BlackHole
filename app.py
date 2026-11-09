@@ -1,15 +1,20 @@
-from flask import Flask 
+from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "esta es la direccion /"
+    return render_template('inex.html')
 
 
 @app.route("/about")
 def about_me():
-    return "aqui va sobre mi"
+    return render_template('aboutMe.html')
+
+@app.route("/BH")
+def black_hole():
+    return render_template('blackHole.html')
 
 # @app.route("/")
 # def home():
