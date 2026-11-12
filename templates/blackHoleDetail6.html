@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block extraStyle %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/blackHoleDetail.css')}}">
+{% endblock extraStyle %}
+
+{% block title %}BLACK HOLE 6{% endblock title %}
+
+{% block content %}
+
+<main class="bh-detail">
+    <div class="bh-detail__inner">
+        <a class="bh-detail__back" href="{{url_for('black_hole')}}">&larr; Volver</a>
+
+        <article class="bh-detail__card">
+            <div class="bh-detail__media">
+                <img class="bh-detail__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 6">
+            </div>
+            <div class="bh-detail__body">
+                <h1 class="bh-detail__title">Black Hole 6</h1>
+                <p class="bh-detail__desc">Descripción del agujero negro.</p>
+            </div>
+        </article>
+    </div>
+</main>
+
+{% endblock content %}

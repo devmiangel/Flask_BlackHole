@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block extraStyle %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/sources.css')}}">
+{% endblock extraStyle %}
+
+{% block title %}SOURCES{% endblock title %}
+
+{% block content %}
+
+<main class="sources-page">
+    <div class="sources-inner">
+        <h1 class="sources-title">SOURCES</h1>
+        <p class="sources-subtitle">Referencias utilizadas</p>
+
+        <ul class="sources-list">
+            <li class="source-item">
+                <span class="source-index">01</span>
+                <div class="source-body">
+                    <h3 class="source-title">Título de la referencia</h3>
+                    <p class="source-meta">Autor · Año · Fuente</p>
+                    <a class="source-link" href="#" target="_blank">Ver fuente &rarr;</a>
+                </div>
+            </li>
+
+            <li class="source-item">
+                <span class="source-index">02</span>
+                <div class="source-body">
+                    <h3 class="source-title">Título de la referencia</h3>
+                    <p class="source-meta">Autor · Año · Fuente</p>
+                    <a class="source-link" href="#" target="_blank">Ver fuente &rarr;</a>
+                </div>
+            </li>
+
+            <li class="source-item">
+                <span class="source-index">03</span>
+                <div class="source-body">
+                    <h3 class="source-title">Título de la referencia</h3>
+                    <p class="source-meta">Autor · Año · Fuente</p>
+                    <a class="source-link" href="#" target="_blank">Ver fuente &rarr;</a>
+                </div>
+            </li>
+
+            <li class="source-item">
+                <span class="source-index">04</span>
+                <div class="source-body">
+                    <h3 class="source-title">Título de la referencia</h3>
+                    <p class="source-meta">Autor · Año · Fuente</p>
+                    <a class="source-link" href="#" target="_blank">Ver fuente &rarr;</a>
+                </div>
+            </li>
+
+            <li class="source-item">
+                <span class="source-index">05</span>
+                <div class="source-body">
+                    <h3 class="source-title">Título de la referencia</h3>
+                    <p class="source-meta">Autor · Año · Fuente</p>
+                    <a class="source-link" href="#" target="_blank">Ver fuente &rarr;</a>
+                </div>
+            </li>
+
+            <li class="source-item">
+                <span class="source-index">06</span>
+                <div class="source-body">
+                    <h3 class="source-title">Título de la referencia</h3>
+                    <p class="source-meta">Autor · Año · Fuente</p>
+                    <a class="source-link" href="#" target="_blank">Ver fuente &rarr;</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+
+{% endblock content %}

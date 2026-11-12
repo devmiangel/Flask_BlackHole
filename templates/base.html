@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} - PBH</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/base.css')}}">
+
+
+    {% block extraStyle %} {% endblock extraStyle %}
+</head>
+<body>
+    <header class="header-page">
+        <nav class="nav-page">
+            <ul class="nav-container">
+                <li class="nav-item item-main "><a href="{{url_for('home')}}" class="item-link">HOME</a></li>
+
+                <li class="nav-item item-name"><a href="{{url_for('about_me')}}" class="item-link">ABOUT ME</a></li>
+
+                <li class="nav-item item-project"><a href="{{url_for('black_hole')}}" class="item-link">BLACK HOLE</a></li>
+
+                <li class="nav-item item-source"><a href="{{url_for('sources')}}" class="item-link">SOURCES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+      
+    {% endblock content %}
+
+    
+</body>
+</html>

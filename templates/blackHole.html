@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block extraStyle %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/blackHole.css')}}">
+{% endblock extraStyle %}
+
+{% block title %}BLACK HOLE{% endblock title %}
+
+{% block content %}
+
+<main class="bh-page">
+    <h1 class="bh-title">BLACK HOLES</h1>
+    <p class="bh-subtitle">Selecciona un agujero negro para conocer más</p>
+
+    <section class="bh-grid">
+        <a class="bh-card bh-card--1" href="{{url_for('black_hole_detail', bh_id=1)}}">
+            <img class="bh-card__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 1">
+            <div class="bh-card__overlay">
+                <h2 class="bh-card__title">Black Hole 1</h2>
+                <p class="bh-card__text">Descripción breve</p>
+            </div>
+        </a>
+
+        <a class="bh-card bh-card--2" href="{{url_for('black_hole_detail', bh_id=2)}}">
+            <img class="bh-card__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 2">
+            <div class="bh-card__overlay">
+                <h2 class="bh-card__title">Black Hole 2</h2>
+                <p class="bh-card__text">Descripción breve</p>
+            </div>
+        </a>
+
+        <a class="bh-card bh-card--3" href="{{url_for('black_hole_detail', bh_id=3)}}">
+            <img class="bh-card__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 3">
+            <div class="bh-card__overlay">
+                <h2 class="bh-card__title">Black Hole 3</h2>
+                <p class="bh-card__text">Descripción breve</p>
+            </div>
+        </a>
+
+        <a class="bh-card bh-card--4" href="{{url_for('black_hole_detail', bh_id=4)}}">
+            <img class="bh-card__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 4">
+            <div class="bh-card__overlay">
+                <h2 class="bh-card__title">Black Hole 4</h2>
+                <p class="bh-card__text">Descripción breve</p>
+            </div>
+        </a>
+
+        <a class="bh-card bh-card--5" href="{{url_for('black_hole_detail', bh_id=5)}}">
+            <img class="bh-card__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 5">
+            <div class="bh-card__overlay">
+                <h2 class="bh-card__title">Black Hole 5</h2>
+                <p class="bh-card__text">Descripción breve</p>
+            </div>
+        </a>
+
+        <a class="bh-card bh-card--6" href="{{url_for('black_hole_detail', bh_id=6)}}">
+            <img class="bh-card__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 6">
+            <div class="bh-card__overlay">
+                <h2 class="bh-card__title">Black Hole 6</h2>
+                <p class="bh-card__text">Descripción breve</p>
+            </div>
+        </a>
+
+        <a class="bh-card bh-card--7" href="{{url_for('black_hole_detail', bh_id=7)}}">
+            <img class="bh-card__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 7">
+            <div class="bh-card__overlay">
+                <h2 class="bh-card__title">Black Hole 7</h2>
+                <p class="bh-card__text">Descripción breve</p>
+            </div>
+        </a>
+
+        <a class="bh-card bh-card--8" href="{{url_for('black_hole_detail', bh_id=8)}}">
+            <img class="bh-card__img" src="{{url_for('static', filename='images/placeholder.svg')}}" alt="Black Hole 8">
+            <div class="bh-card__overlay">
+                <h2 class="bh-card__title">Black Hole 8</h2>
+                <p class="bh-card__text">Descripción breve</p>
+            </div>
+        </a>
+    </section>
+</main>
+
+{% endblock content %}
